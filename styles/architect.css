@@ -307,3 +307,63 @@ footer {
     padding: 2rem 1rem;
     border-radius: 8px;
 }
+
+/* -- Responsive for Medium device -- */
+@media screen and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav .brand-name,
+    nav ul {
+        align-self: flex-start;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .section-content {
+        grid-row: 1;
+    }
+
+    .feature-image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature2-image-container {
+        overflow: visible;
+    }
+
+    .feature2-image-container img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .experience-card {
+        left: 50%;
+        bottom: -4rem;
+        transform: translate(-50%);
+    }
+
+    .data {
+        margin-top: 8rem;
+    }
+
+    .data-box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
